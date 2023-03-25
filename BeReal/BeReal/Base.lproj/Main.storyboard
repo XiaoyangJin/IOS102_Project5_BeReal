@@ -168,6 +168,9 @@
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onSignUpTapped:" destination="aZr-Gb-3yq" eventType="touchUpInside" id="39Z-mB-R9H"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -183,6 +186,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hha-1i-Ktu"/>
+                    <connections>
+                        <outlet property="emailField" destination="f0m-0G-fZS" id="qrF-tq-czQ"/>
+                        <outlet property="passwordField" destination="Ncj-HE-bif" id="227-a6-dCF"/>
+                        <outlet property="usernameField" destination="C5u-Jf-Alg" id="ztC-1d-00K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6f-i7-764" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
