@@ -42,7 +42,7 @@
                                                     <constraint firstAttribute="width" constant="300" id="dKT-e8-HKp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -107,6 +107,89 @@
             </objects>
             <point key="canvasLocation" x="924.4274809160305" y="3.5211267605633805"/>
         </scene>
+        <!--BeReal-->
+        <scene sceneID="NAQ-0J-uyS">
+            <objects>
+                <viewController id="4cO-A2-Hs9" userLabel="BeReal" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGf-eq-6Of">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="z0A-K8-Z4F">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="563" id="kSD-r0-v2T" userLabel="Post Cell">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="563"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kSD-r0-v2T" id="23L-nt-r94">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="563"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="zoq-To-9Bp">
+                                                    <rect key="frame" x="15" y="11.999999999999972" width="363" height="499.33333333333326"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rsz-Aw-Lil">
+                                                            <rect key="frame" x="0.0" y="0.0" width="363" height="32.666666666666664"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACM-yn-i2P" userLabel="Username Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="32.666666666666664"/>
+                                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
+                                                                    <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SHs-3A-est" userLabel="Post Image View">
+                                                            <rect key="frame" x="0.0" y="49.666666666666657" width="363" height="363"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="SHs-3A-est" secondAttribute="height" multiplier="1:1" id="49K-qe-4Au"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZEn-kM-duO">
+                                                            <rect key="frame" x="0.0" y="429.66666666666669" width="363" height="69.666666666666686"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Such a beautiful day!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2s-O4-vAo" userLabel="Caption Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="28.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                                    <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 hours ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCU-xo-BEH" userLabel="Date Label">
+                                                                    <rect key="frame" x="0.0" y="48.333333333333314" width="363" height="21.333333333333329"/>
+                                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zoq-To-9Bp" firstAttribute="leading" secondItem="23L-nt-r94" secondAttribute="leading" constant="15" id="FVY-9Q-ZUd"/>
+                                                <constraint firstAttribute="trailing" secondItem="zoq-To-9Bp" secondAttribute="trailing" constant="15" id="OrZ-S5-ae2"/>
+                                                <constraint firstItem="zoq-To-9Bp" firstAttribute="top" secondItem="23L-nt-r94" secondAttribute="top" constant="12" id="YVN-J1-FuE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N1x-8F-VK0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z0A-K8-Z4F" firstAttribute="leading" secondItem="xGf-eq-6Of" secondAttribute="leading" id="4al-3B-1mR"/>
+                            <constraint firstItem="z0A-K8-Z4F" firstAttribute="top" secondItem="N1x-8F-VK0" secondAttribute="top" id="Gbh-jt-JkZ"/>
+                            <constraint firstAttribute="trailing" secondItem="z0A-K8-Z4F" secondAttribute="trailing" id="Ogl-gV-QSD"/>
+                            <constraint firstAttribute="bottom" secondItem="z0A-K8-Z4F" secondAttribute="bottom" id="feo-dw-cs5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLC-pq-Rsg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922.90076335877859" y="677.46478873239437"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="db1-Qb-liX">
             <objects>
@@ -153,7 +236,7 @@
                                                     <constraint firstAttribute="width" constant="300" id="hf5-Cg-H0l"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMv-nW-t4J">
                                                 <rect key="frame" x="0.0" y="180" width="300" height="34"/>
@@ -218,6 +301,12 @@
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

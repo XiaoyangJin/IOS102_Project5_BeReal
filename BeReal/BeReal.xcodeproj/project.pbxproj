@@ -16,6 +16,7 @@
 		CD15A4CD29CC92C400227012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD15A4CB29CC92C400227012 /* LaunchScreen.storyboard */; };
 		CD15A4DB29CCDE3800227012 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15A4DA29CCDE3800227012 /* SignUpViewController.swift */; };
 		CD15A4DD29CF32E700227012 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15A4DC29CF32E700227012 /* User.swift */; };
+		CD15A4DF29D1B9BA00227012 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15A4DE29D1B9BA00227012 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CD15A4CE29CC92C400227012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD15A4DA29CCDE3800227012 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CD15A4DC29CF32E700227012 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CD15A4DE29D1B9BA00227012 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		FC3929FFEE89FE6B861A93ED /* Pods-BeReal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeReal.debug.xcconfig"; path = "Target Support Files/Pods-BeReal/Pods-BeReal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 		CD15A4D929CCDDD300227012 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				CD15A4DE29D1B9BA00227012 /* PostCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				CD15A4DB29CCDE3800227012 /* SignUpViewController.swift in Sources */,
 				CD15A4DD29CF32E700227012 /* User.swift in Sources */,
 				CD15A4C329CC92C300227012 /* SceneDelegate.swift in Sources */,
+				CD15A4DF29D1B9BA00227012 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
