@@ -7,4 +7,6 @@ target 'BeReal' do
 
   # Pods for BeReal
   pod 'ParseSwift'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
 end
