@@ -21,9 +21,13 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
     }
     
     @IBAction func onPickedImageTapped(_ sender: UIButton) {
+        
         // Create a configuration object
         var config = PHPickerConfiguration()
 
@@ -47,6 +51,9 @@ class PostViewController: UIViewController {
     }
     
     @IBAction func onShareTapped(_ sender: UIButton) {
+        
+        let loader = self.loader()
+        
         // Dismiss Keyboard
         view.endEditing(true)
 
@@ -88,6 +95,11 @@ class PostViewController: UIViewController {
                 }
             }
         }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+            self.stopLoader(loader: loader)
+        }
+        
     }
     
     @IBAction func onViewTapped(_ sender: Any) {

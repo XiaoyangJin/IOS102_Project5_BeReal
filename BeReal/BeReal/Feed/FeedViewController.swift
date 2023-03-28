@@ -12,6 +12,10 @@ class FeedViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
+    //private let refreshControl = UIRefreshControl()
+    
     private var posts = [Post]() {
         didSet {
             tableView.reloadData()
@@ -22,20 +26,33 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+//        let loader = self.loader()
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.allowsSelection = false
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+//            self.stopLoader(loader: loader)
+//        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+//        let loader = self.loader()
+        
 
         queryPosts()
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+//            self.stopLoader(loader: loader)
+//        }
     }
     
     private func queryPosts() {
-        // TODO: Pt 1 - Query Posts
-// https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/2%20-%20Finding%20Objects.xcplaygroundpage/Contents.swift#L66
         // 1. Create a query to fetch Posts
         // 2. Any properties that are Parse objects are stored by reference in Parse DB and as such need to explicitly use `include_:)` to be included in query results.
         // 3. Sort the posts by descending order based on the created at date
@@ -78,6 +95,7 @@ class FeedViewController: UIViewController {
         present(alertController, animated: true)
     }
 
+
 }
 
 extension FeedViewController: UITableViewDataSource {
@@ -92,6 +110,24 @@ extension FeedViewController: UITableViewDataSource {
         cell.configure(with: posts[indexPath.row])
         return cell
     }
+    
 }
 
 extension FeedViewController: UITableViewDelegate { }
+
+//extension FeedViewController {
+//    func loader() -> UIAlertController {
+//        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+//        let indicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+//        indicator.hidesWhenStopped = true
+//        alert.view.addSubview(indicator)
+//        self.present(alert, animated: true, completion: nil)
+//        return alert
+//    }
+//
+//    func stopLoader(loader : UIAlertController){
+//        DispatchQueue.main.async {
+//            loader.dismiss(animated: true, completion: nil)
+//        }
+//    }
+//}
