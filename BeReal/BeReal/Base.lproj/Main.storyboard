@@ -130,10 +130,10 @@
                                                     <rect key="frame" x="15" y="0.0" width="363" height="563"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rsz-Aw-Lil">
-                                                            <rect key="frame" x="0.0" y="0.0" width="363" height="96.333333333333329"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="363" height="33"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACM-yn-i2P" userLabel="Username Label">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="96.333333333333329"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="33"/>
                                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="23"/>
                                                                     <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
@@ -141,23 +141,26 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SHs-3A-est" userLabel="Post Image View">
-                                                            <rect key="frame" x="0.0" y="113.33333333333331" width="363" height="363.00000000000006"/>
+                                                            <rect key="frame" x="0.0" y="50" width="363" height="363"/>
                                                             <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="SHs-3A-est" secondAttribute="height" multiplier="1:1" id="49K-qe-4Au"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZEn-kM-duO">
-                                                            <rect key="frame" x="0.0" y="493.33333333333331" width="363" height="69.666666666666686"/>
+                                                            <rect key="frame" x="0.0" y="430" width="363" height="133"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Such a beautiful day!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2s-O4-vAo" userLabel="Caption Label">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="28.333333333333332"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="91.666666666666671"/>
                                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                                     <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 hours ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCU-xo-BEH" userLabel="Date Label">
-                                                                    <rect key="frame" x="0.0" y="48.333333333333314" width="363" height="21.333333333333329"/>
+                                                                    <rect key="frame" x="0.0" y="111.66666666666663" width="363" height="21.333333333333343"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="21.333333333333343" id="3cz-uN-Ab5"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -166,7 +169,7 @@
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="SHs-3A-est" firstAttribute="top" secondItem="zoq-To-9Bp" secondAttribute="top" constant="113.33333333333331" id="ehQ-ex-BHc"/>
+                                                        <constraint firstItem="SHs-3A-est" firstAttribute="top" secondItem="zoq-To-9Bp" secondAttribute="top" constant="50" id="ehQ-ex-BHc"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
