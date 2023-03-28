@@ -142,6 +142,7 @@
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SHs-3A-est" userLabel="Post Image View">
                                                             <rect key="frame" x="0.0" y="49.666666666666657" width="363" height="363"/>
+                                                            <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="SHs-3A-est" secondAttribute="height" multiplier="1:1" id="49K-qe-4Au"/>
                                                             </constraints>
@@ -172,6 +173,12 @@
                                                 <constraint firstItem="zoq-To-9Bp" firstAttribute="top" secondItem="23L-nt-r94" secondAttribute="top" constant="12" id="YVN-J1-FuE"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="Y2s-O4-vAo" id="CJm-he-IC6"/>
+                                            <outlet property="dateLabel" destination="pCU-xo-BEH" id="ghP-Fh-XAa"/>
+                                            <outlet property="postImageView" destination="SHs-3A-est" id="Ymu-pM-SjA"/>
+                                            <outlet property="usernameLabel" destination="ACM-yn-i2P" id="Ipb-W6-VoG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -232,9 +239,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="363" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="onViewTapped:" destination="gOp-7r-kNP" eventType="editingDidEnd" id="fgn-0M-hCd"/>
+                                        </connections>
                                     </textField>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wld-ub-BtM">
-                                        <rect key="frame" x="0.0" y="39" width="363" height="363"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wld-ub-BtM">
+                                        <rect key="frame" x="0.0" y="40.666666666666657" width="363" height="360"/>
+                                        <color key="backgroundColor" red="0.92549026010000002" green="0.92941176889999999" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="wld-ub-BtM" secondAttribute="height" multiplier="1:1" id="8YE-Q0-6PZ"/>
                                         </constraints>
@@ -258,6 +270,9 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                    <connections>
+                                        <action selector="onShareTapped:" destination="gOp-7r-kNP" eventType="touchUpInside" id="gQB-oe-bpA"/>
+                                    </connections>
                                 </button>
                             </barButtonItem>
                             <barButtonItem style="plain" id="klE-6K-Uog">
@@ -266,14 +281,22 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" image="photo.artframe" catalog="system"/>
+                                    <connections>
+                                        <action selector="onPickedImageTapped:" destination="gOp-7r-kNP" eventType="touchUpInside" id="lBk-CP-k29"/>
+                                    </connections>
                                 </button>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="captionTextField" destination="dLO-AC-NWA" id="ziq-Su-3zC"/>
+                        <outlet property="previewImageView" destination="wld-ub-BtM" id="g75-If-eII"/>
+                        <outlet property="shareButton" destination="BT2-BH-XYP" id="RWV-t4-96d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3R-Je-evS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="694"/>
+            <point key="canvasLocation" x="1868" y="694"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="db1-Qb-liX">
@@ -362,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6f-i7-764" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696.9465648854962" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1868" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gK1-W5-6bK">
@@ -406,6 +429,9 @@
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17647058823529413" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

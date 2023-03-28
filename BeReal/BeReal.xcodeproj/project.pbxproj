@@ -20,6 +20,7 @@
 		CD890FF229D1DAEF00D972AA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD890FF129D1DAEF00D972AA /* FeedViewController.swift */; };
 		CD890FF429D248F700D972AA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD890FF329D248F700D972AA /* Post.swift */; };
 		CD890FF729D24E4500D972AA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD890FF629D24E4500D972AA /* PostCell.swift */; };
+		CD890FFA29D2509D00D972AA /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD890FF929D2509D00D972AA /* DateFormatter+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		CD890FF129D1DAEF00D972AA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CD890FF329D248F700D972AA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CD890FF629D24E4500D972AA /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		CD890FF929D2509D00D972AA /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		FC3929FFEE89FE6B861A93ED /* Pods-BeReal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeReal.debug.xcconfig"; path = "Target Support Files/Pods-BeReal/Pods-BeReal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		CD15A4BF29CC92C300227012 /* BeReal */ = {
 			isa = PBXGroup;
 			children = (
+				CD890FF829D2508C00D972AA /* Extentions */,
 				CD15A4C029CC92C300227012 /* AppDelegate.swift */,
 				CD15A4C229CC92C300227012 /* SceneDelegate.swift */,
 				CD15A4D629CCDDB600227012 /* Models */,
@@ -130,6 +133,14 @@
 				CD890FF629D24E4500D972AA /* PostCell.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		CD890FF829D2508C00D972AA /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CD890FF929D2509D00D972AA /* DateFormatter+Extensions.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		DC55983AEE78EE348AEA3D8E /* Pods */ = {
@@ -263,6 +274,7 @@
 				CD15A4C529CC92C300227012 /* LoginViewController.swift in Sources */,
 				CD15A4C129CC92C300227012 /* AppDelegate.swift in Sources */,
 				CD15A4E129D1C0C800227012 /* PostViewController.swift in Sources */,
+				CD890FFA29D2509D00D972AA /* DateFormatter+Extensions.swift in Sources */,
 				CD15A4DB29CCDE3800227012 /* SignUpViewController.swift in Sources */,
 				CD15A4DD29CF32E700227012 /* User.swift in Sources */,
 				CD15A4C329CC92C300227012 /* SceneDelegate.swift in Sources */,
