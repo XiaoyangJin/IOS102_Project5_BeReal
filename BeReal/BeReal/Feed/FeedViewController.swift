@@ -59,6 +59,7 @@ class FeedViewController: UIViewController {
         let query = Post.query()
             .include("user")
             .order([.descending("createdAt")])
+            .limit(10)
 
         // Fetch objects (posts) defined in query (async)
         query.find { [weak self] result in
