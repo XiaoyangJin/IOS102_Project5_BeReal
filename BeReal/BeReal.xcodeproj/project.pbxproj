@@ -85,15 +85,15 @@
 		CD15A4BF29CC92C300227012 /* BeReal */ = {
 			isa = PBXGroup;
 			children = (
-				CD890FF829D2508C00D972AA /* Extentions */,
 				CD15A4C029CC92C300227012 /* AppDelegate.swift */,
 				CD15A4C229CC92C300227012 /* SceneDelegate.swift */,
 				CD15A4D629CCDDB600227012 /* Models */,
 				CD15A4D729CCDDC200227012 /* Login */,
 				CD15A4D929CCDDD300227012 /* Feed */,
 				CD15A4D829CCDDCB00227012 /* Post */,
-				CD15A4C629CC92C300227012 /* Main.storyboard */,
+				CD890FF829D2508C00D972AA /* Extentions */,
 				CD15A4C929CC92C400227012 /* Assets.xcassets */,
+				CD15A4C629CC92C300227012 /* Main.storyboard */,
 				CD15A4CB29CC92C400227012 /* LaunchScreen.storyboard */,
 				CD15A4CE29CC92C400227012 /* Info.plist */,
 			);

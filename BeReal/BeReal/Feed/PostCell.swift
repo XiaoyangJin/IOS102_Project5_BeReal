@@ -44,6 +44,7 @@ class PostCell: UITableViewCell {
 
         // Caption
         captionLabel.text = post.caption
+        // print(post.caption)
 
         // Date
         if let date = post.createdAt {

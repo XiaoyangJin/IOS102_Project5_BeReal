@@ -32,7 +32,10 @@ class FeedViewController: UIViewController {
 
         queryPosts()
     }
+    
     private func queryPosts() {
+        // TODO: Pt 1 - Query Posts
+// https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/2%20-%20Finding%20Objects.xcplaygroundpage/Contents.swift#L66
         // 1. Create a query to fetch Posts
         // 2. Any properties that are Parse objects are stored by reference in Parse DB and as such need to explicitly use `include_:)` to be included in query results.
         // 3. Sort the posts by descending order based on the created at date
@@ -50,6 +53,7 @@ class FeedViewController: UIViewController {
                 self?.showAlert(description: error.localizedDescription)
             }
         }
+
     }
 
     @IBAction func onLogOutTapped(_ sender: Any) {
@@ -73,6 +77,7 @@ class FeedViewController: UIViewController {
         alertController.addAction(action)
         present(alertController, animated: true)
     }
+
 }
 
 extension FeedViewController: UITableViewDataSource {
