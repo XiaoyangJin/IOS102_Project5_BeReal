@@ -12,9 +12,7 @@ class FeedViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
-    //private let refreshControl = UIRefreshControl()
+    var refreshControl = UIRefreshControl()
     
     private var posts = [Post]() {
         didSet {
@@ -27,22 +25,25 @@ class FeedViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-//        let loader = self.loader()
-        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.allowsSelection = false
-        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
-//            self.stopLoader(loader: loader)
-//        }
-        
+
+        refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
+        tableView.addSubview(refreshControl)
+    }
+    
+    @objc func refresh(send: UIRefreshControl) {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        let loader = self.loader()
+        //let loader = self.loader()
         
 
         queryPosts()
