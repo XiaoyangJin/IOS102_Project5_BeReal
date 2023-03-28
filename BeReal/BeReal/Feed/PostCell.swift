@@ -19,7 +19,6 @@ class PostCell: UITableViewCell {
     private var imageDataRequest: DataRequest?
     
     func configure(with post: Post) {
-        // TODO: Pt 1 - Configure Post Cell
         // Username
         if let user = post.user {
             usernameLabel.text = user.username
